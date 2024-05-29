@@ -11,11 +11,11 @@ export const sendDataToGA = async (item: string) => {
     }-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
     await fetch(
-      'https://script.google.com/macros/s/AKfycby1USC3DM7tp7b5LsMbdUsgKROd0DrVrkknmt4Yq3vyZrOBGJBDopcYrfXZVNkD5HY0dA/exec',
+      'https://script.google.com/macros/s/AKfycbxB1iWk41ZmEs3Nkeeu2dpwcRUz7W5aq-egeaHV2YynZHDNc2QQjNirrOdXyIHWB4HlTw/exec',
       {
         redirect: 'follow',
         method: 'POST',
-        body: JSON.stringify({ date, cart: item, variant: 'variant_5' }),
+        body: JSON.stringify({ date, button: item, variant: 'variant_5' }),
         headers: {
           'Content-Type': 'text/plain;charset=utf-8',
         },
