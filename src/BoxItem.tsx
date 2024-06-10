@@ -35,7 +35,7 @@ export const BoxItem = ({ checked, imgSrc, setChecked, title, title2, subtitle, 
             {subtitle}
           </Typography.Text>
         </div>
-        <Typography.Text tag="p" view="primary-small" weight="bold" defaultMargins={false}>
+        <Typography.Text tag="p" view="primary-small" weight="regular" defaultMargins={false}>
           {title2}
         </Typography.Text>
       </div>
